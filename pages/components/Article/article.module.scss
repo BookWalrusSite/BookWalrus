@@ -1,0 +1,23 @@
+#article {
+  border-bottom: 2px solid rgb(170, 170, 170);
+  border-top: 2px solid rgb(170, 170, 170);
+}
+
+#article h3 {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+  border-width: 1;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+#writeup {
+  text-align: center;
+  width: 50%;
+  overflow-wrap: break-word;
+}
+
+#read-more {
+  margin-bottom: 1rem;
+}

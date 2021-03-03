@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "url":"harry-potter",
+        "title": "Harry Potter",
+        "author": "JK Rowling",
+        "coverImage": "/assets/book1.jpg",
+        "genre": "fantasy",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 2,
+        "url":"hunger-games",
+        "title": "Hunger Games",
+        "author": "Suzanne Collins",
+        "coverImage": "/assets/book2.jpg",
+        "genre": "Dystopian",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 3,
+        "url":"american-gods",
+        "title": "American Gods",
+        "author": "Neil Gaiman",
+        "coverImage": "/assets/book3.jpg",
+        "genre":"fantasy",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 1,
+        "url":"harry-potter",
+        "title": "Harry Potter",
+        "author": "JK Rowling",
+        "coverImage": "/assets/book4.jpg",
+        "genre": "fantasy",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 2,
+        "url":"hunger-games",
+        "title": "Hunger Games",
+        "author": "Suzanne Collins",
+        "coverImage": "/assets/book5.jpg",
+        "genre": "Dystopian",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 3,
+        "url":"american-gods",
+        "title": "American Gods",
+        "author": "Neil Gaiman",
+        "coverImage": "/assets/book6.jpg",
+        "genre":"fantasy",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 1,
+        "url":"harry-potter",
+        "title": "Harry Potter",
+        "author": "JK Rowling",
+        "coverImage": "/assets/book1.jpg",
+        "genre": "fantasy",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 2,
+        "url":"hunger-games",
+        "title": "Hunger Games",
+        "author": "Suzanne Collins",
+        "coverImage": "/assets/book2.jpg",
+        "genre": "Dystopian",
+        "writeup":"Here is a write up about the novel..."
+    },
+    {
+        "id": 3,
+        "url":"american-gods",
+        "title": "American Gods",
+        "author": "Neil Gaiman",
+        "coverImage": "/assets/book3.jpg",
+        "genre":"fantasy",
+        "writeup":"Here is a write up about the novel..."
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "id":1,
+        "headline":"Best Sellers",
+        "url":"best-sellers",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero magni facere odio sit eligendi quibusdam natus odit hic assumenda quasi possimus doloremque eaque dicta, facilis beatae nam cumque voluptatem est."
+
+    },
+    {
+        "id":2,
+        "headline":"Trending",
+        "url":"trending",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatibus assumenda ad porro aliquam doloremque quidem iusto amet obcaecati tenetur laboriosam consectetur dignissimos odit impedit officia aperiam ullam, minima voluptatem."
+    },
+    {
+        "id":3,
+        "headline":"Best Sellers2",
+        "url":"best-sellers2",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero magni facere odio sit eligendi quibusdam natus odit hic assumenda quasi possimus doloremque eaque dicta, facilis beatae nam cumque voluptatem est."
+
+    },
+    {
+        "id":4,
+        "headline":"Trending2",
+        "url":"trending2",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatibus assumenda ad porro aliquam doloremque quidem iusto amet obcaecati tenetur laboriosam consectetur dignissimos odit impedit officia aperiam ullam, minima voluptatem."
+    },{
+        "id":5,
+        "headline":"Best Sellers3",
+        "url":"best-sellers3",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero magni facere odio sit eligendi quibusdam natus odit hic assumenda quasi possimus doloremque eaque dicta, facilis beatae nam cumque voluptatem est."
+
+    },
+    {
+        "id":6,
+        "headline":"Trending3",
+        "url":"trending3",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatibus assumenda ad porro aliquam doloremque quidem iusto amet obcaecati tenetur laboriosam consectetur dignissimos odit impedit officia aperiam ullam, minima voluptatem."
+    }
+]
