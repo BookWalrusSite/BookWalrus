@@ -1,5 +1,5 @@
-import {Navbar, Footer} from "../components/index"
-import books from '../components/BookData/data.json'
+import {Navbar, Footer} from "../../components/index"
+import books from '../../components/BookData/data.json'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'

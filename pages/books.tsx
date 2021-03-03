@@ -1,5 +1,5 @@
-import {Navbar, Footer} from "./components/index"
-import BookCards from './components/BookCards/BookCards'
+import {Navbar, Footer} from "../components/index"
+import BookCards from '../components/BookCards/BookCards'
 import styles from '../styles/books.module.scss'
 
 

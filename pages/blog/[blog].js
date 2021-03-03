@@ -1,5 +1,5 @@
-import {Navbar, Footer} from "../components/index"
-import blog from '../components/BlogData/blog.json'
+import {Navbar, Footer} from "../../components/index"
+import blog from '../../components/BlogData/blog.json'
 
 
 
