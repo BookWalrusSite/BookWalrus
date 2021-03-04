@@ -1,30 +1,25 @@
 import {Navbar, Footer} from "../../components/index"
-import books from '../../components/BookData/data.json'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import Image from 'next/image'
+import fetch from 'isomorphic-unfetch'
 
 
-function BookPage() {
-  const router = useRouter()
-  const {id} = router.query
 
-  const bookPreview = books.filter(book => book.url === id)
-  console.log(bookPreview[0].title)
+function BookPage({book}) {
+  
     return (
         <>
         <Navbar />
          <div id='bookview' className="container col-8">
           <div className="row">
             <div className="col-8">
-            <h2>{bookPreview[0].title}</h2>
-            <h4>{bookPreview[0].author}</h4>
-            <p className="writeup">{bookPreview[0].writeup}</p>
+            <h2>{book.title}</h2>
+            <h4>{book.author}</h4>
+            <p className="writeup">{book.writeup}</p>
          </div>
          <div className="col-4">
            <Image
-            src={bookPreview[0].coverImage}
-            alt={bookPreview[0].genre}
+            src={book.coverImage}
+            alt={book.genre}
             width={300}
             height={300}
             />
@@ -37,3 +32,35 @@ function BookPage() {
 }
 
 export default BookPage
+
+export async function getStaticProps(context) {
+  const url = context.params.id
+  const res = await fetch('http://localhost:3000/api/feeds/' +url);
+  const book = await res.json();
+
+  if (!book) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {book: book},
+  }
+}
+
+export async function getStaticPaths() {
+  const res = await fetch(`http://localhost:3000/api/feeds/`);
+  const data = await res.json();
+
+ 
+  const paths = data.books.map(book => {
+    return {
+      params: {id: book.url}
+    }
+  })
+  return {
+    paths,
+    fallback: false
+  };
+}

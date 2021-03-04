@@ -1,15 +1,14 @@
 import styles from './bc.module.scss'
-
+import data from '../BookData/data.json'
 import Link from 'next/link'
 
-function BookCards({books}) {
-    console.log(books)
+function BookCards() {
     return (
         <>
          
         <div id={styles.list}className="container-md">
             <div className="row g-2">
-            {books.map((d) => (
+            {data.map((d) => (
             <Link href={`/books/${d.url}`} key={d.id}>
                 <div id={styles.card} className='col-4 p-4'>
                     <a>
@@ -27,18 +26,3 @@ function BookCards({books}) {
 }
 
 export default BookCards
-
-export async function getStaticProps() {
-    const res = await fetch(`http://localhost:3000/api/feeds/`);
-    const data = await res.json()
-    
-    if (!data) {
-      return {
-        notFound: true,
-      }
-    }
-  
-    return {
-      props: {books: data.books},
-    }
-  }

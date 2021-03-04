@@ -1,0 +1,72 @@
+import {Navbar, Footer} from "../../components/index"
+import books from '../../components/BookData/data.json'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
+
+export const getStaticPaths = async () => {
+  const data = books;
+
+  const paths = data.map(book => {
+    return {
+      params: {id: book.id.toString()}
+    }
+  })
+
+  return{
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps = async(context) => {
+  const ids = context.params.id;
+
+  const book = await books.id}
+  const data = await book.json();
+console.log(data)
+  return{
+    props: {book : data}
+  }
+
+}
+
+------------------------ use this------
+import {Navbar, Footer} from "../../components/index"
+import books from '../../components/BookData/data.json'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
+
+
+function BookPage() {
+  const router = useRouter()
+  const id = router.query.id
+
+  const bookPreview = books.find(book => book.url == id)
+  
+    return (
+        <>
+        <Navbar />
+         <div id='bookview' className="container col-8">
+          <div className="row">
+            <div className="col-8">
+            <h2>{bookPreview.title}</h2>
+            <h4>{bookPreview.author}</h4>
+            <p className="writeup">{bookPreview.writeup}</p>
+         </div>
+         <div className="col-4">
+           <Image
+            src={bookPreview.coverImage}
+            alt={bookPreview.genre}
+            width={300}
+            height={300}
+            />
+         </div>
+         </div>
+         </div>
+        <Footer />
+        </>
+    )
+}
+
+export default BookPage
+
