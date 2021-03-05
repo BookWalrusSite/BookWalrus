@@ -1,9 +1,9 @@
 import styles from './bc.module.scss'
-
+import novels from '../../components/BookData/data.json'
 import Link from 'next/link'
 
 function BookCards({books}) {
-    console.log(books)
+    
     return (
         <>
          
@@ -29,8 +29,9 @@ function BookCards({books}) {
 export default BookCards
 
 export async function getStaticProps() {
-    const res = await fetch(`http://localhost:3000/api/feeds/`);
-    const data = await res.json()
+    // const res = await fetch(`http://localhost:3000/api/feeds/`);
+    // const data = await res.json()
+    const data = novels;
     
     if (!data) {
       return {
@@ -39,6 +40,6 @@ export async function getStaticProps() {
     }
   
     return {
-      props: {books: data.books},
+      props: {books: data},
     }
   }
